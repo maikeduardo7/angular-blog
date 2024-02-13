@@ -3,6 +3,7 @@ import { MenuBarComponent } from '../../components/menu-bar/menu-bar.component';
 import { MenuTitleComponent } from '../../components/menu-title/menu-title.component';
 import { BigCardComponent } from '../../components/big-card/big-card.component';
 import { SmallCardComponent } from '../../components/small-card/small-card.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -10,10 +11,12 @@ import { SmallCardComponent } from '../../components/small-card/small-card.compo
   imports: [MenuBarComponent,
     MenuTitleComponent,
     BigCardComponent,
-    SmallCardComponent],
+    SmallCardComponent,
+  RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+
 
 }
